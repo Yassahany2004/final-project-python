@@ -1,0 +1,15 @@
+def get_sorted_names(names_list):
+    sorted_names = sorted(names_list)
+    print("\nSorted names:")
+    for name in sorted_names:
+        print(name)
+
+count = int(input("How many names do you want to enter? "))
+names = []
+
+for i in range(count):
+    first_part = input(f"Enter the first part of name {i+1}: ")
+    last_part = input(f"Enter the last part of name {i+1}: ")
+    names.append(first_part + " " + last_part)
+
+get_sorted_names(names)
